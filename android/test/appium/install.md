@@ -20,11 +20,16 @@ Path -> %ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;
 
 #### [**python-client**](https://github.com/appium/python-client)
 
-> ```
 > pip install Appium-Python-Client
-> ```
 
 #### Test
 
-打开Appium service，点击右上角的“Start Inspector Session”![](/assets/Appium/appium_test_evn.png)
+#### 打开Appium service，点击右上角的“Start Inspector Session”![](/assets/Appium/appium_test_evn.png)Package
+
+```
+pip install ConfigParser
+
+```
+
+
 
