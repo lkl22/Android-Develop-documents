@@ -28,8 +28,13 @@ Path -> %ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;
 
 ```
 pip install ConfigParser
-
+pip install xlrd
+pip install xlutils
 ```
 
+HTML测试报告模板
 
+将HTMLTestRunner.py放到C:\Python3\Lib目录中
+
+[http://tungwaiyip.info/software/HTMLTestRunner.html](http://tungwaiyip.info/software/HTMLTestRunner.html)
 
