@@ -18,6 +18,8 @@ Path -> %ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;
 
 [http://appium.io/](http://appium.io/)
 
+> npm install -g appium
+
 #### [**python-client**](https://github.com/appium/python-client)
 
 > pip install Appium-Python-Client
@@ -38,7 +40,7 @@ Python2  将HTMLTestRunner.py放到C:\Python3\Lib目录中
 
 [http://tungwaiyip.info/software/HTMLTestRunner.html](http://tungwaiyip.info/software/HTMLTestRunner.html)
 
-Python3 
+Python3
 
 [https://pypi.org/project/HTMLReport/\#description](https://pypi.org/project/HTMLReport/#description)
 
