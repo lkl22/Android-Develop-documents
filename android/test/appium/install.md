@@ -34,7 +34,11 @@ pip install xlutils
 
 HTML测试报告模板
 
-将HTMLTestRunner.py放到C:\Python3\Lib目录中
+Python2  将HTMLTestRunner.py放到C:\Python3\Lib目录中
 
 [http://tungwaiyip.info/software/HTMLTestRunner.html](http://tungwaiyip.info/software/HTMLTestRunner.html)
+
+Python3 
+
+[https://pypi.org/project/HTMLReport/\#description](https://pypi.org/project/HTMLReport/#description)
 
