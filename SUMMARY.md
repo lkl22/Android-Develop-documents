@@ -7,4 +7,5 @@
 * [Test](android/test.md)
   * [Appium](android/test/appium.md)
     * [Install](android/test/appium/install.md)
+    * [Config](android/test/appium/config.md)
 
