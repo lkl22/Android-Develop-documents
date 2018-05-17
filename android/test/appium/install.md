@@ -34,6 +34,8 @@ pip install xlrd
 pip install xlutils
 ```
 
+yaml:[https://github.com/yaml/pyyaml](https://github.com/yaml/pyyaml)
+
 HTML测试报告模板
 
 Python2  将HTMLTestRunner.py放到C:\Python3\Lib目录中
