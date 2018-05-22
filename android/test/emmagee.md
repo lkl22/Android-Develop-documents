@@ -20,5 +20,7 @@
 
 > adb pull /sdcard/Emmagee/ F:\Emmagee\
 
+![](/assets/Emmagee/emmagee_result.png)
+
 6、将csv数据拷贝到excel中生成图表，使用自带的统计图标功能生成统计图，即可清晰看到整个操作过程中cpu、内存等关键数据的变化。
 
