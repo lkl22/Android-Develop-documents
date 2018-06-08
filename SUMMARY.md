@@ -9,4 +9,5 @@
     * [Install](android/test/appium/install.md)
     * [Config](android/test/appium/config.md)
   * [Emmagee](android/test/emmagee.md)
+* [Issue](android/issue.md)
 
