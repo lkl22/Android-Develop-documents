@@ -26,7 +26,7 @@ Path -> %ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;
 
 #### Test
 
-#### 打开Appium service，点击右上角的“Start Inspector Session”![](/assets/Appium/appium_test_evn.png)Package
+#### 打开Appium service，点击右上角的“Start Inspector Session”![](../imgs/Appium/appium_test_evn.png)Package
 
 ```
 pip install ConfigParser
