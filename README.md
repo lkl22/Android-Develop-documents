@@ -10,6 +10,7 @@
   * [Emmagee](docs/test/emmagee.md)
 * [NDK](docs/ndk.md)
   * [Install](docs/ndk/install.md)
+* [Modules](Modules/README.md)
 * [Issue](docs/issue.md)
 
 # 参考文献
