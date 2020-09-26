@@ -8,6 +8,7 @@ import android.media.projection.MediaProjectionManager;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -25,6 +26,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.lkl.media.R;
 import com.tbruyelle.rxpermissions3.RxPermissions;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class RecordActivity extends AppCompatActivity {
     private static final String TAG = "RecordActivity";
@@ -66,7 +72,7 @@ public class RecordActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         rxPermissions.request(Manifest.permission.CAMERA, Manifest.permission.MOUNT_UNMOUNT_FILESYSTEMS, Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                Manifest.permission.SYSTEM_ALERT_WINDOW)
+                Manifest.permission.SYSTEM_ALERT_WINDOW, Manifest.permission.WRITE_SETTINGS)
                 .subscribe(granted -> {
                 });
     }
@@ -113,9 +119,14 @@ public class RecordActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (isRecord) {
                     bt_play.setText("开始录屏");
+//                    toggleTouch();
+//                    Settings.System.putInt(getContentResolver(),
+//                            "show_touches", 1);
                     stopScreenRecord();
                 } else {
                     bt_play.setText("停止录屏");
+//                    Settings.System.putInt(getContentResolver(),
+//                            "show_touches", 0);
                     startScreenRecord();
                 }
             }
@@ -127,6 +138,22 @@ public class RecordActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    private void toggleTouch() {
+//        try {
+//            Class clazz = Class.forName("com.android.server.input.InputManagerService");
+//            Constructor constructor = clazz.getConstructor(Context.class);
+//            Object object = constructor.newInstance(this);
+//            Field field = clazz.getDeclaredField("mPtr");
+//            long ptr = field.getLong(object);
+//
+//            Method method = clazz.getDeclaredMethod("nativeSetShowTouches", Long.class, Boolean.class);
+//            method.invoke(null, ptr, true);
+//
+//        } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException | NoSuchFieldException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Override
