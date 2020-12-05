@@ -1,5 +1,7 @@
 # Android学习资料
 
+* [User Guide](docs/userGuide.md)
+  * [Configure your build](docs/userGuide/buildConfigure.md)
 * [Tools](docs/tools.md)
   * [Adb](docs/tools/adb.md)
   * [SDK](docs/tools/sdk.md)
