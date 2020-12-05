@@ -29,9 +29,9 @@ android {
 
 ## 更改用于构建变体的应用 ID
 
-当您为应用构建 APK 时，构建工具会使用 `build.gradle` 文件的 _defaultConfig_ 块中定义的应用 ID 标记 APK（如下所示）。不过，如果您要创建不同版本的应用，让其在 Google Play 商店中显示为单独的详情（如“free”和“pro”版本），则需要创建单独的[构建变体]()，这些变体各自具有不同的应用 ID。
+当您为应用构建 APK 时，构建工具会使用 `build.gradle` 文件的 _defaultConfig_ 块中定义的应用 ID 标记 APK（如下所示）。不过，如果您要创建不同版本的应用，让其在 Google Play 商店中显示为单独的详情（如“free”和“pro”版本），则需要创建单独的[构建变体](./configureBuildVariants.md)，这些变体各自具有不同的应用 ID。
 
-在这种情况下，每个构建变体应定义为单独的[产品变种]()。对于 `productFlavors` 块中的每个变种，您可以重新定义 `applicationId` 属性，也可以使用 `applicationIdSuffix` 在默认的应用 ID 上追加一段，如下所示：
+在这种情况下，每个构建变体应定义为单独的[产品变种](./configureBuildVariants.md)。对于 `productFlavors` 块中的每个变种，您可以重新定义 `applicationId` 属性，也可以使用 `applicationIdSuffix` 在默认的应用 ID 上追加一段，如下所示：
 
 ```groovy
 android {
